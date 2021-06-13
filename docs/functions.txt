@@ -1,1 +1,11 @@
-
+regisztráció: az alkalmazásba be lehet regisztrálni, név, emailcím és jelszó megadásával
+bejelentkezés: az alkalmazásba be lehet jelentkezni egy meglévő felhasználói fiókkal
+új cikk létrehozás: az alkalmazásban új cikkeket lehet létrehozniuk a bejelentkezett felhasználóknak
+saját cikk szerkesztése: publikálás után szerkeszteni tudja utólag is a felhasználó a saját cikkeit
+saját cikk törlése: a felhasználó törölni tudja a saját cikkeit
+felhasználói profil beállítása : az alkalmazásban szerkeszthető a felhasználói profil (kép, felhasználónév, bemutatkozás,e-mail cím, jelszó)
+bejegyzések kedvencnek jelölése: az alkalmazásban lehetőség van a bejegyzéseket a kedvencek jelölni
+bejegyzések szűrése címkék alapján: az alkalmazásban lehetőség van a bejegyzéseket címkék szerint szűrni
+felhasználók követése: az alkalmazásban követni lehet a kiválasztott felhasználók aktivitásait
+kommentelés: az alkalmazásban kommentelni lehet a bejegyzésekhez
+komment törlése: az alkalmazásban a felhasználó törölheti a saját kommentjeit publikálás után is
