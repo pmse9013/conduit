@@ -1,0 +1,6 @@
+Ellenőrizzük a home page-t bejelentkezés nélkül : mert kritikus pontja a rendszernek
+Regisztráció helyes tesztadatokkal : kritikus pontja  a rendszernek,és a sok beviteli mező miatt gyorsabb automatizáltan tesztelni
+Regisztráció helytelen tesztadatokkal : kritikus pontja  a rendszernek,és a sok beviteli mező miatt gyorsabb automatizáltan tesztelni
+Bejelentkezés helyes tesztadatokkal : kritikus pont
+Bejelentkezés hibás tesztadatokkal : kritikus pont
+Bejelentkezés tesztadatok nélkül : kritikus pont
