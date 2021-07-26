@@ -45,12 +45,22 @@
             <ul class="nav nav-pills outline-active">
               <li class="nav-item">
                 <router-link
+                  v-if="isCurrentUser()"
                   class="nav-link"
                   active-class="active"
                   exact
                   :to="{ name: 'profile', params: { username: profile.username } }"
                 >
                   My Articles
+                </router-link>
+                <router-link
+                  v-else
+                  class="nav-link"
+                  active-class="active"
+                  exact
+                  :to="{ name: 'profile', params: { username: profile.username } }"
+                >
+                  {{ profile.username }}'s Articles
                 </router-link>
               </li>
               <li class="nav-item">
@@ -65,7 +75,7 @@
               </li>
             </ul>
           </div>
-          <router-view></router-view>
+          <router-view :key="$route.fullPath"></router-view>
         </div>
       </div>
     </div>
@@ -78,7 +88,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "Profile",
   mounted() {
-    console.log("route params",this.$route.params)
+    console.log(this.$route.params)
     this.$store.dispatch("fetchProfile", this.$route.params);
   },
   props: {
@@ -95,7 +105,9 @@ export default {
     ])
   },
   methods: {
-    
+    fetchProfile() {
+      this.$store.dispatch("fetchProfile", this.params.profile.username);
+    },
     isCurrentUser() {
       if (this.user.username && this.profile.username) {
         return this.user.username === this.profile.username;
@@ -111,7 +123,13 @@ export default {
     }
   },
   watch: {
-    
+    $route(to, from) {
+      // react to route changes...
+      if (to.name === "profile") {
+        console.log("$route(to, from)", to, from)
+        this.$store.dispatch("fetchProfile", to.params);
+      }
+    },
     followed() {
       this.fetchProfile();
     }

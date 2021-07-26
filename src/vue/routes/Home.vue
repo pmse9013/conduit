@@ -41,7 +41,8 @@
               </li>
             </ul>
           </div>
-          <router-view></router-view>
+          <router-view :key="$route.fullPath">
+          </router-view>
         </div>
         <div class="col-md-3">
           <div class="sidebar">
@@ -78,6 +79,11 @@ export default {
     tag() {
       return this.$route.params.tag;
     }
-  }
+  },
+  watch: {
+    $route(to, from) {
+        this.$store.dispatch("fetchTags");
+      }
+    }
 };
 </script>
