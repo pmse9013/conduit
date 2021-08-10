@@ -5,14 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import csv
+from webdriver_manager.chrome import ChromeDriverManager
 
-PATH = "C:\\Users\\Emese\\OneDrive\\Asztali gép\\driver\\chromedriver.exe"
-URL = "http://localhost:1667/#/"
-
-driver = webdriver.Chrome(PATH)
-driver.maximize_window()
-
-driver.get(URL)
 
 
 def sign_in(driver):
