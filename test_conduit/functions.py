@@ -15,7 +15,7 @@ def sign_in(driver):
         driver, 10).until(
         EC.visibility_of_element_located((By.XPATH, "//h1[contains(text(),'Sign in')]"))
     )
-    driver.find_element_by_xpath("//input[@placeholder='Email']").send_keys(f"papp.emese9013+3@gmail.com")
+    driver.find_element_by_xpath("//input[@placeholder='Email']").send_keys("papp.emese9013+3@gmail.com")
     driver.find_element_by_xpath("//input[@placeholder='Password']").send_keys("Jelszó123")
     driver.find_element_by_xpath("//button[contains(text(),'Sign in')]").click()
     element = WebDriverWait(

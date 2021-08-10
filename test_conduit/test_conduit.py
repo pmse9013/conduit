@@ -44,13 +44,13 @@ class TestConduit(object):
                 assert accepted != False
 
     # Regisztráció
-    def test_sign_in(self):
+    def test_sign_up(self):
         x = random.randint(0, 500)
         self.driver.maximize_window()
         time.sleep(5)
         self.driver.find_element_by_xpath("//a[@href='#/register']").click()
-        self.driver.find_element_by_xpath("//input[@placeholder='Username']").send_keys(f"papp.emese{x}")
-        self.driver.find_element_by_xpath("//input[@placeholder='Email']").send_keys(f"papp.emese9013+{x}@gmail.com")
+        self.driver.find_element_by_xpath("//input[@placeholder='Username']").send_keys("papp.emese1")
+        self.driver.find_element_by_xpath("//input[@placeholder='Email']").send_keys("papp.emese9013+3@gmail.com")
         self.driver.find_element_by_xpath("//input[@placeholder='Password']").send_keys("Jelszó123")
         self.driver.find_element_by_xpath("//button[contains(text(), 'Sign up')]").click()
         element = WebDriverWait(
@@ -69,7 +69,7 @@ class TestConduit(object):
             self.driver, 5).until(
             EC.visibility_of_element_located((By.XPATH, "//h1[contains(text(),'Sign in')]"))
         )
-        self.driver.find_element_by_xpath("//input[@placeholder='Email']").send_keys(f"papp.emese9013+3@gmail.com")
+        self.driver.find_element_by_xpath("//input[@placeholder='Email']").send_keys("papp.emese9013+3@gmail.com")
         self.driver.find_element_by_xpath("//input[@placeholder='Password']").send_keys("Jelszó123")
         self.driver.find_element_by_xpath("//button[contains(text(),'Sign in')]").click()
         time.sleep(3)
