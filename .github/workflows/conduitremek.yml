@@ -1,0 +1,75 @@
+name: conduitremek
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+
+jobs:
+  build:
+
+
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9.5]
+    steps:
+    - uses: actions/checkout@v2
+    - run: docker-compose up -d
+
+
+    - name: Sleep for 60 seconds
+      run: sleep 60s
+      shell: bash
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install flake8 pytest
+        if [ -f test_conduit/requirements.txt ]; then pip install -r test_conduit/requirements.txt; fi
+
+
+    - name: Install Chrome
+      run: |
+        sudo apt install google-chrome-stable
+
+
+    - name: Test with pytest
+      run: |
+        pytest --alluredir=allure-results
+
+
+    - name: Allure Report action from marketplace
+      uses: simple-elf/allure-report-action@master
+      if: always()
+      with:
+        allure_results: allure-results
+        allure_history: allure-history
+        keep_reports: 20
+
+
+    - name: Collect docker logs on failure
+      uses: jwalton/gh-docker-logs@v1
+      with:
+        dest: './logs'
+
+
+    - name: Archive execution artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: docker-logs
+        path: ./logs
+
+
+    - name: Deploy report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: allure-history
