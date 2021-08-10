@@ -11,21 +11,22 @@ from functions import sign_in
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
+URL = 'http://localhost:1667'
+
 class TestConduit(object):
 
-
     def setup(self):
-        self.driver = webdriver.Chrome("C:\\Users\\Emese\\OneDrive\\Asztali gép\\driver\\chromedriver.exe")
-        self.driver.get("http://localhost:1667/#/")
         browser_options = Options()
         browser_options.headless = True
-        driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
-        self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
+        self.browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
+        self.browser.get(URL)
+        time.sleep(1)
 
     def teardown(self):
         self.driver.quit()
 
     def test_home_page_appearances(self):
+        time.sleep(5)
         self.driver.maximize_window()
         assert self.driver.find_element_by_xpath("//h1[contains(text(), 'conduit')]").text == "conduit"
 
@@ -40,11 +41,13 @@ class TestConduit(object):
         for cookie in cookies:
             if cookie['value'] == 'accept':
                 accepted = True
-                break
+                assert accepted != False
+
     # Regisztráció
     def test_sign_in(self):
         x = random.randint(0, 500)
         self.driver.maximize_window()
+        time.sleep(5)
         self.driver.find_element_by_xpath("//a[@href='#/register']").click()
         self.driver.find_element_by_xpath("//input[@placeholder='Username']").send_keys(f"papp.emese{x}")
         self.driver.find_element_by_xpath("//input[@placeholder='Email']").send_keys(f"papp.emese9013+{x}@gmail.com")
