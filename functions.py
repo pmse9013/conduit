@@ -6,14 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import csv
 
-PATH = "C:\\Users\\Emese\\OneDrive\\Asztali gép\\driver\\chromedriver.exe"
-URL = "http://localhost:1667/#/"
-
-driver = webdriver.Chrome(PATH)
-driver.maximize_window()
-
-driver.get(URL)
-
 
 def sign_in(driver):
     driver.find_element_by_xpath("//a[@href='#/login']").click()
