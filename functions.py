@@ -7,7 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import csv
 from webdriver_manager.chrome import ChromeDriverManager
 
-
 def sign_in(driver):
     driver.find_element_by_xpath("//a[@href='#/login']").click()
     element = WebDriverWait(
