@@ -1,0 +1,111 @@
+[ {
+  "uid" : "53d2d2fdc91ac080",
+  "name" : "test_home_page_appearances",
+  "time" : {
+    "start" : 1628624587823,
+    "stop" : 1628624593038,
+    "duration" : 5215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74f955249bde314a",
+  "name" : "test_new_comments",
+  "time" : {
+    "start" : 1628624656045,
+    "stop" : 1628624666648,
+    "duration" : 10603
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ce8c368ed506f006",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628624610962,
+    "stop" : 1628624614340,
+    "duration" : 3378
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "df68e63fbeb268a3",
+  "name" : "test_sign_in",
+  "time" : {
+    "start" : 1628624600211,
+    "stop" : 1628624608469,
+    "duration" : 8258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e97cec273971ca79",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628624616883,
+    "stop" : 1628624627373,
+    "duration" : 10490
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "21d2717105abd02",
+  "name" : "test_change_bio",
+  "time" : {
+    "start" : 1628624687287,
+    "stop" : 1628624697889,
+    "duration" : 10602
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b28010bf47d9b669",
+  "name" : "test_delete_article",
+  "time" : {
+    "start" : 1628624699370,
+    "stop" : 1628624709971,
+    "duration" : 10601
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4f1362e609a0cc2c",
+  "name" : "test_data_list",
+  "time" : {
+    "start" : 1628624629855,
+    "stop" : 1628624640454,
+    "duration" : 10599
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a75850151484d8f8",
+  "name" : "test_save_data",
+  "time" : {
+    "start" : 1628624669158,
+    "stop" : 1628624684768,
+    "duration" : 15610
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f3f8368b9f9bfb61",
+  "name" : "test_new_post",
+  "time" : {
+    "start" : 1628624642949,
+    "stop" : 1628624653547,
+    "duration" : 10598
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "642283c831920a83",
+  "name" : "test_accept_cookies",
+  "time" : {
+    "start" : 1628624594530,
+    "stop" : 1628624597727,
+    "duration" : 3197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
