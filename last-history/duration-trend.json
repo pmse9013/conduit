@@ -1,8 +1,6 @@
 [ {
-  "buildOrder" : 11,
-  "reportUrl" : "https://pmse9013.github.io/conduit/11/",
+  "buildOrder" : 12,
+  "reportUrl" : "https://pmse9013.github.io/conduit/12/",
   "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 112094
-  }
+  "data" : { }
 } ]
