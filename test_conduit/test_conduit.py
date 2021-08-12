@@ -112,7 +112,7 @@ class TestConduit(object):
         self.driver.find_element_by_xpath("//button[contains(text(),'Publish Article')]").click()
         time.sleep(3)
         self.driver.find_element_by_xpath("//a[@href='#/']").click()
-        time.sleep()
+        time.sleep(3)
         titles = self.driver.find_elements_by_xpath("//a[@class='preview-link']/h1")
         for i in titles:
             assert i.text == "Walesi bárdok"
