@@ -121,7 +121,7 @@ class TestConduit(object):
                print("Walesi bárdok is in titles")
 
     #Több oldalas lista bejárása
-    def pages(self):
+    def test_pages(self):
         self.driver.maximize_window()
         sign_in(self.driver)
         self.driver.find_element_by_xpath("//a[@class='page-link'][contains(text(),'2')]").click()
