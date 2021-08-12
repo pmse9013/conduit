@@ -1,9 +1,0 @@
-[ {
-  "buildOrder" : 10,
-  "reportUrl" : "https://pmse9013.github.io/conduit/10/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 11,
-    "retry" : 0
-  }
-} ]

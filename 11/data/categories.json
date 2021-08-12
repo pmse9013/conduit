@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Lorem ipsum dolor sit amet' == 'Walesi bárdok'\n  - Walesi bárdok\n  + Lorem ipsum dolor sit amet",
+      "children" : [ {
+        "name" : "test_new_post",
+        "uid" : "fb9d3d08ca5dbacc",
+        "parentUid" : "0c8f9558b28fa17ec7f4f1ec10cdd809",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628790514200,
+          "stop" : 1628790524799,
+          "duration" : 10599
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0c8f9558b28fa17ec7f4f1ec10cdd809"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
