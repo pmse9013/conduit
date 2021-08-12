@@ -115,7 +115,7 @@ class TestConduit(object):
         time.sleep(3)
         titles = self.driver.find_elements_by_xpath("//a[@class='preview-link']/h1")
         for i in titles:
-           if i.text != "Walesi bárdok"
+           if i.text != "Walesi bárdok":
                continue
            elif i.text == "Walesi bárdok":
                print("Walesi bárdok is in titles")
