@@ -98,7 +98,7 @@ class TestConduit(object):
         assert len(titles_of_articles) == len(art_titles)
 
 
-    #ÚJ ADATBEVITEL
+    #Új adatbevitel
     def test_new_post(self):
         self.driver.maximize_window()
         sign_in(self.driver)
@@ -112,6 +112,7 @@ class TestConduit(object):
         self.driver.find_element_by_xpath("//button[contains(text(),'Publish Article')]").click()
         time.sleep(3)
         self.driver.find_element_by_xpath("//a[@href='#/']").click()
+        time.sleep()
         titles = self.driver.find_elements_by_xpath("//a[@class='preview-link']/h1")
         for i in titles:
             assert i.text == "Walesi bárdok"
