@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import csv
 from webdriver_manager.chrome import ChromeDriverManager
 
-
+URL = 'http://localhost:1667'
 
 def sign_in(driver):
     driver.find_element_by_xpath("//a[@href='#/login']").click()
@@ -22,3 +22,11 @@ def sign_in(driver):
         driver, 10).until(
         EC.visibility_of_element_located((By.XPATH, "// a[contains(text(), 'Your Feed')]"))
     )
+
+
+def wait_for_element(driver, value):
+    element = WebDriverWait(
+            driver, 5).until(
+            EC.visibility_of_element_located((By.XPATH, value))
+        )
+    return element
