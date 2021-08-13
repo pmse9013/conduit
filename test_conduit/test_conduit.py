@@ -105,6 +105,7 @@ class TestConduit(object):
     #Több oldalas lista bejárása
     def test_pages(self):
         sign_in(self.driver)
+        time.sleep(3)
         self.driver.find_element_by_xpath("//a[@class='page-link'][contains(text(),'2')]").click()
         time.sleep(3)
         assert self.driver.find_element_by_xpath("//h1[contains(text(), 'Walesi bárdok')]").is_displayed() == True
