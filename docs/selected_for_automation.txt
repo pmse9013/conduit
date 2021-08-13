@@ -1,6 +1,12 @@
-Ellenőrizzük a home page-t bejelentkezés nélkül : mert kritikus pontja a rendszernek
-Regisztráció helyes tesztadatokkal : kritikus pontja  a rendszernek,és a sok beviteli mező miatt gyorsabb automatizáltan tesztelni
-Regisztráció helytelen tesztadatokkal : kritikus pontja  a rendszernek,és a sok beviteli mező miatt gyorsabb automatizáltan tesztelni
-Bejelentkezés helyes tesztadatokkal : kritikus pont
-Bejelentkezés hibás tesztadatokkal : kritikus pont
-Bejelentkezés tesztadatok nélkül : kritikus pont
+Home page megjelenése (test_home_page_appearances)
+Cookiek kezelése (test_accept_cookies)
+Regisztráció (test_sign_up)
+Bejelentkezés (test_login)
+Kijelentkezés (test_logout)
+Bejegyzés címének és a tartalom első sorának lementése (test_data_list)
+Új bejegyzés létrehozása (test_new_post)
+Global feed lapozójának működése (test_pages)
+Kommentek létrehozása (test_new_comments)
+Global feed bejegyzések címeinek mentése (test_save_data)
+Felhasználó bemutatkozójának módosítása (test_change_bio)
+Bejegyzés törlése (test_delete_article)
