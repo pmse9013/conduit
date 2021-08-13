@@ -106,7 +106,7 @@ class TestConduit(object):
     def test_pages(self):
         sign_in(self.driver)
         self.driver.find_element_by_xpath("//a[@class='page-link'][contains(text(),'2')]").click()
-        time.sleep(1)
+        time.sleep(3)
         assert self.driver.find_element_by_xpath("//h1[contains(text(), 'Walesi bárdok')]").is_displayed() == True
 
     # Ismételt és sorozatos adatbevitel adatforrásból
