@@ -1,0 +1,121 @@
+[ {
+  "uid" : "4bd320925f259f75",
+  "name" : "test_sign_up",
+  "time" : {
+    "start" : 1629667025507,
+    "stop" : 1629667029302,
+    "duration" : 3795
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcf1d63fdbe79a1e",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1629667038343,
+    "stop" : 1629667041935,
+    "duration" : 3592
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76af03f2e24e8673",
+  "name" : "test_new_post",
+  "time" : {
+    "start" : 1629667049304,
+    "stop" : 1629667058536,
+    "duration" : 9232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38b57b8cc946e34e",
+  "name" : "test_pages",
+  "time" : {
+    "start" : 1629667061333,
+    "stop" : 1629667068900,
+    "duration" : 7567
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a66eafbe895b39b",
+  "name" : "test_home_page_appearances",
+  "time" : {
+    "start" : 1629667017637,
+    "stop" : 1629667018705,
+    "duration" : 1068
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f72d5e0d2e6d666c",
+  "name" : "test_data_list",
+  "time" : {
+    "start" : 1629667044813,
+    "stop" : 1629667046504,
+    "duration" : 1691
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "804542d7e9aaac61",
+  "name" : "test_delete_article",
+  "time" : {
+    "start" : 1629667101191,
+    "stop" : 1629667105843,
+    "duration" : 4652
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20c3834e6760eb88",
+  "name" : "test_accept_cookies",
+  "time" : {
+    "start" : 1629667021541,
+    "stop" : 1629667022603,
+    "duration" : 1062
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51d1414bd557536d",
+  "name" : "test_save_data",
+  "time" : {
+    "start" : 1629667088752,
+    "stop" : 1629667091335,
+    "duration" : 2583
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5646bd9182943d07",
+  "name" : "test_change_bio",
+  "time" : {
+    "start" : 1629667094035,
+    "stop" : 1629667099469,
+    "duration" : 5434
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "911a96aed0677fe2",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1629667032101,
+    "stop" : 1629667035556,
+    "duration" : 3455
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6a7a9fac28e1d45",
+  "name" : "test_new_comments",
+  "time" : {
+    "start" : 1629667070626,
+    "stop" : 1629667087045,
+    "duration" : 16419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
